@@ -1,0 +1,126 @@
+.edit-button, .remove-button, .copy-button, .save-button, .resize-button {
+    display: flex;
+    cursor: pointer;
+    border: 0;
+    background: #23282B;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: "";
+        background: url("/assets/images/edit-icon.png");
+        background-size: cover !important;
+        display: block;
+        width: 12px;
+        height: 12px;
+    }
+
+    &:hover {
+        // background: #3a4043;
+        opacity: 0.9;
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+        // background: #1d2124;
+        opacity: 0.6;
+    }
+}
+.copy-button::after {
+    background: url("/assets/images/copy-icon.png");
+}
+.edit-button::after {
+    background: url("/assets/images/edit-icon.png");
+}
+.remove-button::after {
+    background: url("/assets/images/remove-icon.png");
+}
+.resize-button::after {
+    background: url("/assets/images/resize-icon.png");
+}
+.save-button::after {
+    background: url("/assets/images/save-icon.png");
+}
+
+.remove-button-white::after {
+    mask: url("/assets/images/remove-icon.png");
+    background: #fff;
+    mask-size: cover;
+}
+.edit-button-white::after {
+    mask: url("/assets/images/edit-icon.png");
+    background: #fff;
+    mask-size: cover;
+}
+.copy-button-white::after {
+    mask: url("/assets/images/copy-icon.png");
+    background: #fff;
+    mask-size: cover;
+}
+.resize-button-white::after {
+    mask: url("/assets/images/resize-icon.png");
+    background: #fff;
+    mask-size: cover;
+}
+
+.remove-button-black::after {
+    mask: url("/assets/images/remove-icon.png");
+    background: #2b2b2b;
+    mask-size: cover;
+}
+.edit-button-black::after {
+    mask: url("/assets/images/edit-icon.png");
+    background: #2b2b2b;
+    mask-size: cover;
+}
+.copy-button-black::after {
+    mask: url("/assets/images/copy-icon.png");
+    background: #2b2b2b;
+    mask-size: cover;
+}
+.save-button-black::after {
+    mask: url("/assets/images/save-icon.png");
+    background: #2b2b2b;
+    mask-size: cover;
+}
+.resize-button-black::after {
+    mask: url("/assets/images/resize-icon.png");
+    background: #2b2b2b;
+    mask-size: cover;
+}
+
+// Green button
+.remove-button-green::after {
+    mask: url("/assets/images/remove-icon.png");
+    background: #529E37;
+    mask-size: cover;
+}
+.copy-button-green::after {
+    mask: url("/assets/images/copy-icon.png");
+    background: #529E37;
+    mask-size: cover;
+}
+.edit-button-green::after {
+    mask: url("/assets/images/edit-icon.png");
+    background: #529E37;
+    mask-size: cover;
+}
+
+.button-white-bg {
+    background: #ffffff;
+}
+
+.big-button {
+    width: 54px;
+    height: 54px;
+    border-radius: 54px;
+
+    &::after {
+        width: 32px;
+        height: 32px;
+    }
+}

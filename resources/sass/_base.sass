@@ -1,0 +1,110 @@
+$bgColor: #383a3c
+$textGreen: #5FBE3D
+
+@import "../assets/font/roboto.css"
+
+html, body
+  height: 100%
+
+body
+  font-family: Roboto, sans-serif
+  font-size: 14px
+  background: $bgColor
+  display: flex
+  margin: 0
+  padding: 0
+
+// Base container for auth, sign ,recover
+.center-container
+  width: 370px
+  margin: 0 auto
+  align-self: center
+
+  @media (max-width: 450px)
+    width: 100%
+    align-self: flex-start
+
+  // The information at top of the form
+  .title-information
+    color: $textGreen
+    text-align: center
+    margin-bottom: 25px
+    font-weight: 900
+
+  // For auth, sign, recover form with fields, buttons and etc.
+  .form-container
+    display: flex
+    background: #7d7d7d
+    box-shadow: 0 5px 10px rgba(142, 139, 139, 0.5), inset 0 8px 11px 0 #575757
+    border-radius: 10px
+    padding: 40px
+    flex-direction: column
+
+    input, select
+      flex: 1
+      background: linear-gradient(179.65deg, rgba(67, 67, 67, 0.03) -40.78%, #232526 26.57%)
+      border-radius: 10px
+      padding: 18px 25px
+      border: 0
+      color: #ffffff
+      margin-bottom: 15px
+      outline: 0
+
+      &::placeholder
+        color: #ffffff
+
+    // Forgot password and etc
+    .hint-green
+      color: $textGreen
+      margin-top: 20px
+      font-size: 10px
+      text-align: center
+      text-decoration: underline
+      margin-bottom: 15px
+      font-weight: bold
+
+    .tas
+      font-size: 11px
+      margin-top: 20px
+      color: #FFFFFF
+      margin-bottom: 15px
+      text-align: center
+
+      a
+        display: block
+        color: $textGreen
+        margin-top: 5px
+        text-decoration: underline
+        font-weight: 900
+
+    button
+      cursor: pointer
+      background: linear-gradient(0deg, rgba(155, 222, 131, 0) -30.06%, rgba(101, 219, 60, 0.9) 111.77%)
+      border-radius: 10px
+      font-size: 14px
+      padding: 18px 20px
+      text-align: center
+      border: 0
+      color: #ffffff
+      outline: 0
+      width: 80%
+      align-self: center
+
+      &:hover
+        background: linear-gradient(0deg, rgba(155, 222, 131, 0) -28.06%, rgba(95, 239, 55, 0.9) 111.77%)
+
+      &:active
+        background: linear-gradient(0deg, rgba(155, 222, 131, 0) -28.06%, rgba(31, 162, 11, 0.9) 111.77%)
+        position: relative
+        color: #b4b4b4
+        top: 1px
+
+    .hint
+      color: #ffffff
+      margin-top: 25px
+      font-size: 10px
+      text-align: center
+
+      a
+        color: $textGreen
+        font-weight: 900
